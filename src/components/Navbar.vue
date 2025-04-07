@@ -1,7 +1,11 @@
 <template>
   <header class="p-3 shadow-md w-full">
     <div class="max-w-screen-xl mx-auto flex justify-between items-center">
-      <h1 class="text-blue-500 font-bold text-xl">PetHouse</h1>
+
+        <div class="flex items-center gap-2">
+          <Dog color="#000000" />
+          <h1 class="text-blue-500 font-bold text-2xl">PetHouse</h1>
+        </div>
 
         <nav class="flex gap-8 justify-center">
         <RouterLink
@@ -59,4 +63,5 @@
 
 <script setup>
     import { RouterLink } from 'vue-router';
+    import { Dog } from 'lucide-vue-next';
 </script>
